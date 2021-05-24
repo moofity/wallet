@@ -14,6 +14,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('App\Interfaces\Services\IUserService', 'App\Services\UserService');
+        $this->app->bind('App\Interfaces\Services\IWalletService', 'App\Services\WalletService');
     }
 
     /**
