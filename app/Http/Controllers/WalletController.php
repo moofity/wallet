@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateWalletRequest;
 use App\Http\Requests\UpdateWalletRequest;
 use App\Interfaces\Services\IWalletService;
+use App\Models\Wallet;
+use Throwable;
 
 class WalletController extends Controller
 {

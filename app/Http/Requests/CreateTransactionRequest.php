@@ -16,7 +16,7 @@ class CreateTransactionRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return $this->wallet->user->is(auth()->user());
     }
 
     /**

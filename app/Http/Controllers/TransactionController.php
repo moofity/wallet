@@ -16,7 +16,6 @@ class TransactionController extends Controller
      */
     public function __construct(protected IWalletService $walletService)
     {
-        // $this->authorizeResource(Transaction::class, 'transaction');
     }
 
     /**

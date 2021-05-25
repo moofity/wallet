@@ -72,18 +72,18 @@ This is an example of how to list things you need to use the software and how to
    ```
 4. Run the application with `sail`. (*It may take little longer when creating container initially*)
    ```sh
-    sail up -d
+    ./vendor/bin/sail up -d
    ```
 5. Run migrations
    ```sh
-    sail artisan migrate
+    ./vendor/bin/sail artisan migrate
    ```
 6. Setup the UI
    ```sh
-    sail npm install
-    sail npm run prod # or dev
+    ./vendor/bin/sail npm install
+    ./vendor/bin/sail npm run prod # or dev
    ```
 7. Run the tests
    ```sh
-    sail test
+    ./vendor/bin/sail test
    ```
